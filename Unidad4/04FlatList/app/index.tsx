@@ -5,7 +5,7 @@ import { StyleSheet } from "react-native";
 import { useState } from "react";
 
 
-const [usuarios, setUsuarios] = useState ([
+const usuarios = [
   {id: '1', nombre: 'Juan', apellido: 'Perez'},
   {id: '2', nombre: 'Maria', apellido: 'Gomez'},
   {id: '3', nombre: 'Carlos', apellido: 'Lopez'},
@@ -16,9 +16,8 @@ const [usuarios, setUsuarios] = useState ([
   {id: '8', nombre: 'Laura', apellido: 'Sanchez'},
   {id: '9', nombre: 'Diego', apellido: 'Ramirez'},
   {id: '10', nombre: 'Elena', apellido: 'Torres'}
-]);
+];
 
-//#region styles
 const styles = StyleSheet.create({
   item: {
     padding: 10,
@@ -35,11 +34,11 @@ export default function Index() {
   return (
     <FlatList
     data = {usuarios}
-    keyExtractor={(item) => item.id}
+    keyExtractor={(item) => item.id.toString()}
     renderItem={({item}) => (
-      <view style = {styles.item}>
-        <text style = {styles.text} >{item.nombre} {item.apellido}</text>
-      </view>
+      <View style = {styles.item}>
+        <Text style = {styles.text} >{item.nombre} {item.apellido}</Text>
+      </View>
     )}
     />
   )

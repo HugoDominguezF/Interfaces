@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "03view",
-    "slug": "03view",
+    "name": "04FlatList",
+    "slug": "04FlatList",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "03view",
+    "scheme": "04flatlist",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
