@@ -26,11 +26,11 @@ export default function Index() {
   return (
     <FlatList
     data = {personas}
-    keyExtractor={(item) => item.getId.toString()}
+    keyExtractor={(item) => item.Id.toString()}
     renderItem={({item}) => (
       <View style = {styles.item}>
         <TouchableOpacity onPress={() => vm.personaPress(item) }>
-          <Text style = {styles.text} >{item.getNombre()} {item.getApellido()}</Text>
+          <Text style = {styles.text} >{item.Nombre} {item.Apellido}</Text>
         </TouchableOpacity>
       </View>
     )}

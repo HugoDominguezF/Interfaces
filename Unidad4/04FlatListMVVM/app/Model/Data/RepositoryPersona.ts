@@ -27,6 +27,6 @@ export class RepositoryPersona {
         this.personas.push(persona);
     }
     public removePersona(id: number): void {
-        this.personas = this.personas.filter(p => p.getId() !== id);
+        this.personas = this.personas.filter(p => p.Id !== id);
     }
 }

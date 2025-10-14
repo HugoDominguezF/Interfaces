@@ -19,7 +19,7 @@ export class IndexVM {
     }
     public personaPress(persona: Persona): void {
         this.personaSeleccionada = persona;
-        alert(`Persona seleccionada: ${persona.getNombre()} ${persona.getApellido()}`);
+        alert(`has clicado en :  ${persona.Nombre} ${persona.Apellido}`);
     }
 
 }
