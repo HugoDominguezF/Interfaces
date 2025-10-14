@@ -2,7 +2,7 @@
 import { Persona } from '../Entities/PersonaModel';
 
 export class RepositoryPersona {
-    
+
     private personas: Persona[] = [
         new Persona(1, 'Juan', 'Perez'),
         new Persona(2, 'Maria', 'Gomez'),
@@ -13,7 +13,12 @@ export class RepositoryPersona {
         new Persona(7, 'Miguel', 'Hernandez'),
         new Persona(8, 'Laura', 'Sanchez'),
         new Persona(9, 'Diego', 'Ramirez'),
-        new Persona(10, 'Elena', 'Torres')
+        new Persona(10, 'Elenaa', 'Torres'),
+        new Persona(11, 'Elenas', 'Torres'),
+        new Persona(12, 'Elenad', 'Torres'),
+        new Persona(13, 'Elenaq', 'Torres'),
+        new Persona(14, 'Elenaw', 'Torres'),
+        new Persona(15, 'Elenae', 'Torres'),
     ];
     public getPersonas(): Persona[] {
         return this.personas;
