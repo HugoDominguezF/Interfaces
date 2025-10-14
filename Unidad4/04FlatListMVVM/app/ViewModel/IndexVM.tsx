@@ -25,8 +25,10 @@ export class IndexVM {
     }
 
     private personaPress(): void {
-        
+
+        if(this.personaSeleccionada != null) {
         alert(`has clicado en :  ${this.personaSeleccionada?.Nombre} ${this.personaSeleccionada?.Apellido}`);
     }
+}
 
 }
