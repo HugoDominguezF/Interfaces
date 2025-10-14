@@ -9,12 +9,12 @@ export class IndexVM {
     constructor() {
         this.personaSeleccionada
     }
-    public getPersonas(): Persona[] {
+    public get Personas(): Persona[] {
         const repo = new RepositoryPersona();
         this.personas = repo.Personas;
         return this.personas;
     }
-    public getPersonaSeleccionada(): Persona | null {
+    public get PersonaSeleccionada(): Persona | null {
         return this.personaSeleccionada;
     }
     public personaPress(persona: Persona): void {

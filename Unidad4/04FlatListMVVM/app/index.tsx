@@ -6,7 +6,7 @@ import { Persona } from "./Model/Entities/PersonaModel";
 import { IndexVM } from "./ViewModel/IndexVM";
 
 const vm = new IndexVM();
-const personas = vm.getPersonas();
+const personas = vm.Personas;
 
 
 const styles = StyleSheet.create({
