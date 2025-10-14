@@ -20,7 +20,7 @@ export class RepositoryPersona {
         new Persona(14, 'Elenaw', 'Torres'),
         new Persona(15, 'Elenae', 'Torres'),
     ];
-    public getPersonas(): Persona[] {
+    public get Personas(): Persona[] {
         return this.personas;
     }
     public addPersona(persona: Persona): void {

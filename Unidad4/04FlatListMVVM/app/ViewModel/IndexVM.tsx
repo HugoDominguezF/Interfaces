@@ -11,7 +11,7 @@ export class IndexVM {
     }
     public getPersonas(): Persona[] {
         const repo = new RepositoryPersona();
-        this.personas = repo.getPersonas();
+        this.personas = repo.Personas;
         return this.personas;
     }
     public getPersonaSeleccionada(): Persona | null {
