@@ -6,7 +6,6 @@ import { Persona } from "./Model/Entities/PersonaModel";
 import { IndexVM } from "./ViewModel/IndexVM";
 
 const vm = new IndexVM();
-const personas = vm.Personas;
 
 
 const styles = StyleSheet.create({
@@ -25,11 +24,11 @@ export default function Index() {
 
   return (
     <FlatList
-    data = {personas}
+    data = {vm.Personas}
     keyExtractor={(item) => item.Id.toString()}
     renderItem={({item}) => (
       <View style = {styles.item}>
-        <TouchableOpacity onPress={() => vm.personaPress(item) }>
+        <TouchableOpacity onPress={() => vm.PersonaSeleccionada = item}>
           <Text style = {styles.text} >{item.Nombre} {item.Apellido}</Text>
         </TouchableOpacity>
       </View>
