@@ -4,7 +4,7 @@ import { RepositoryPersona } from "../Model/Data/RepositoryPersona";
 export class IndexVM {
 
     private personas: Persona[] = [];
-    private personaSeleccionada : Persona | null = null;
+    private personaSeleccionada: Persona | null = null;
 
     constructor() {
         this.personaSeleccionada
@@ -19,16 +19,16 @@ export class IndexVM {
     public get PersonaSeleccionada(): Persona | null {
         return this.personaSeleccionada;
     }
-    public set PersonaSeleccionada(value: Persona | null){
+    public set PersonaSeleccionada(value: Persona | null) {
         this.personaSeleccionada = value;
         this.personaPress();
     }
 
     private personaPress(): void {
 
-        if(this.personaSeleccionada != null) {
-        alert(`has clicado en :  ${this.personaSeleccionada?.Nombre} ${this.personaSeleccionada?.Apellido}`);
+        if (this.personaSeleccionada != null) {
+            alert(`has clicado en :  ${this.personaSeleccionada?.Nombre} ${this.personaSeleccionada?.Apellido}`);
+        }
     }
-}
 
 }
